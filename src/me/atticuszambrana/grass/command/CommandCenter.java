@@ -11,7 +11,7 @@ import me.atticuszambrana.grass.command.commands.information.HelpCommand;
 
 public class CommandCenter implements MessageCreateListener {
 	
-	List<Command> commands;
+	public static List<Command> commands;
 	Grass grass;
 	
 	public CommandCenter(Grass grass) {
@@ -24,7 +24,6 @@ public class CommandCenter implements MessageCreateListener {
 	private void registerCommands() {
 		// Information
 		commands.add(new HelpCommand());
-		
 		
 	}
 	
